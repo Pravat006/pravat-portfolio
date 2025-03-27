@@ -86,7 +86,7 @@ export default function Projects() {
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="w-full h-40 object-cover rounded-md"
+                  className="w-full h-44 lg:h-72 object-cover rounded-md"
                 />
                 <h2 className="text-xl font-semibold mt-4">{project.name}</h2>
                 <div className="flex gap-4 mt-3">

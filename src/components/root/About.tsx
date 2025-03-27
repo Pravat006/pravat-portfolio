@@ -28,7 +28,7 @@ const About = () => {
         <p className="mb-4 text-2xl">
           Hi, I'm <span className="text-blue-400 font-semibold text-3xl">Pravat Behera</span>, a passionate web developer who loves building interactive and scalable applications.
         </p>
-        <p>
+        <p className="lg:text-2xl">
           My journey in coding started with a curiosity for web technologies, and it has grown into a deep expertise in <h3 className="font-bold text-xl ">Frontend and Backend Development</h3>
         </p>
       </motion.div>
@@ -43,8 +43,8 @@ const About = () => {
         viewport={{ once: false, amount: 0.3 }}
       >
         <h2 className="text-2xl font-semibold mb-4">Education</h2>
-        <p className="font-bold">🎓 Studying <span className="font-bold text-yellow-500">B.Tech in Computer Science </span > Biju Patnaik University of Technology</p>
-        <p>My studies have provided me with a strong foundation in software development and problem-solving. <br /> Which makes me more curious about Development </p>
+        <p className="font-bold lg:text-2xl">🎓 Studying <span className="font-bold text-yellow-500">B.Tech in Computer Science </span > Biju Patnaik University of Technology</p>
+        <p className="lg:text-2xl">My studies have provided me with a strong foundation in software development and problem-solving. <br /> Which makes me more curious about Development </p>
       </motion.div>
 
       {/* Development Skills */}
