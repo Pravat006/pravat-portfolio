@@ -5,8 +5,15 @@
 html {
   scroll-behavior: smooth;
 }
-
+html, body {
+  @apply transition-colors duration-500 ease-in-out;
+}
 :root {
+  --rev-bg:white; 
+  /* ---app-bg: radial-gradient(circle at top, rgba(255, 253, 253, 0.5) 0%, rgba(15, 23, 42, 1) 50%, rgba(30, 41, 59, 1) 100%); */
+  /* --app-bg:radial-gradient(circle at top, rgba(41, 41, 41, 0.671) 0%, rgb(255, 255, 255) 50%, rgb(116, 116, 116) 100%); */
+  --app-bg: linear-gradient(to bottom right, #cfcfcf, #e6e6e6, #f5f5f5, #d9d9d9);
+  --card-bg:rgb(15, 15, 15);
   --page-bg:white;
   --text:black;
   --sl-background: white;
@@ -45,6 +52,12 @@ html {
 }
 
 .dark {
+ 
+  --rev-bg:black;
+   /* --app-bg: radial-gradient(circle at top, rgba(0, 0, 0, 0.5) 0%, rgba(15, 23, 42, 1) 50%, rgba(30, 41, 59, 1) 100%); */
+   /* --app-bg: radial-gradient(circle at top, rgba(49, 48, 48, 0.5) 0%, rgb(11, 6, 31) 50%, rgb(3, 15, 36) 100%); */
+   --app-bg: black;
+   --card-bg:rgb(75, 75, 75);
   --page-bg:black;
   --text:white;
   --sl-background: oklch(0 0 0);
@@ -125,6 +138,7 @@ html {
   }
   body {
     @apply bg-background text-foreground;
+    background: var(--app-bg);
   }
 }
 

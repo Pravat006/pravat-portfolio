@@ -41,25 +41,25 @@ const HamBugMenu = () => {
         ></div>
       </label>
       {isChecked && (
-        <nav className="absolute top-14 right-2.5 w-56 backdrop-blur-lg bg-white/70 z-50 shadow-lg p-4 rounded-lg py-6">
+        <nav className="absolute top-14 right-2.5 w-56 backdrop-blur-lg bg-[var(--card-bg)]/70 z-50 shadow-lg p-4 rounded-lg py-6">
           <ul className="space-y-2">
           <li className="text-center">
-            <a href="#home" className="hover:text-blue-500 text-[var(--text)] font-bold duration-200 "  onClick={() => setIsChecked(!isChecked)}>
+            <a href="#home" className="hover:text-blue-500 hover:text-2xl text-[var(--rev-bg)] font-bold duration-200 "  onClick={() => setIsChecked(!isChecked)}>
               Home
             </a>
           </li>
           <li className="text-center">
-            <a href="#about" className="hover:text-blue-500 text-[var(--text)] font-bold duration-200"  onClick={() => setIsChecked(!isChecked)}>
+            <a href="#about" className="hover:text-blue-500  hover:text-2xl text-[var(--rev-bg)] font-bold duration-200"  onClick={() => setIsChecked(!isChecked)}>
               About
             </a>
           </li>
           <li className="text-center">
-            <a href="#projects" className="hover:text-blue-500 text-[var(--text)] font-bold duration-200"  onClick={() => setIsChecked(!isChecked)}>
+            <a href="#projects" className="hover:text-blue-500 hover:text-2xl text-[var(--rev-bg)] font-bold duration-200"  onClick={() => setIsChecked(!isChecked)}>
               Projects
             </a>
           </li>
           <li className="text-center">
-            <a href="#contact" className="hover:text-blue-500 text-[var(--text)] font-bold duration-200"
+            <a href="#contact" className="hover:text-blue-500 text-[var(--rev-bg)] font-bold duration-200 hover:text-2xl"
              onClick={() => setIsChecked(!isChecked)}
             >
               Contact

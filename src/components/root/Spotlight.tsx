@@ -6,7 +6,7 @@ import TextGenerator from "./TextGeneratoer";
 
 export function SpotL() {
   return (
-    <div className="relative flex h-[58rem] w-full overflow-hidden rounded-md dark:bg-[var(--sl-background)] bg-[var(--sl-background)] antialiased md:items-center md:justify-center mx-auto rounded-3xl">
+    <div className="relative flex h-[58rem] w-full overflow-hidden  dark:bg-[var(--sl-background)] bg-[var(--sl-background)] antialiased md:items-center md:justify-center mx-auto rounded-3xl">
       <div
         className={cn(
           "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none flex items-center justify-center",

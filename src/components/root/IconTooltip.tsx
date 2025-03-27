@@ -24,7 +24,7 @@ const IconTooltip = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 justify-center mt-10">
+    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 justify-center mt-10 bg-gray-400 p-4 rounded-2xl lg:p-8" >
       {icons.map((item, index) => (
         <div
           key={item.id}

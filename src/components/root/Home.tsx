@@ -3,7 +3,7 @@ import { SpotL } from "./Spotlight"
 
 function Home() {
   return (
-    <div className="rounded-3xl mr-0">
+    <div className="rounded-3xl mr-0 ">
        {/* <Header /> */}
       <SpotL/>
       

@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
-
 import IconTooltip from "./IconTooltip";
-
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-[var(--page-bg)] text-[var(--text)] px-6 md:px-16 pt-28 pb-10 rounded-3xl">
+    <div className="min-h-screen bg-transparent backdrop-blur-3xl  text-[var(--text)] px-6 md:px-16 pt-28 pb-10 rounded-3xl overflow-hidden border-2 shadow-2xl">
       {/* Title */}
       <motion.h1
         className="text-4xl font-bold text-center mb-10"
@@ -59,12 +57,9 @@ const About = () => {
         viewport={{ once: false, amount: 0.3 }}
       >
         <h2 className="text-2xl font-semibold mb-4">Development Skills</h2>
-        {/* <div className="grid grid-cols-2 md:grid-cols-3 gap-4"> */}
-       <div>
-          <IconTooltip/>
-       </div>
-
-        
+        <div>
+          <IconTooltip />
+        </div>
       </motion.div>
     </div>
   );

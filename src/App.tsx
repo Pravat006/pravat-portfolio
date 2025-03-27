@@ -11,10 +11,11 @@ function App() {
 
   return (
     <ThemeProvider>
-      <div className=" h-screen bg-[var(--bg)] dark:bg-[var(--bg-dark)] overflow-auto ">
+      <div className=" h-screen  dark:bg-[var(--bg-dark)] overflow-auto bg-app-bg ">
         <Header />
         <div className="flex flex-col gap-5 ">
-          <section id="home" className="min-h-screen rounded-3xl ">
+          
+          <section id="home" className="rounded-3xl ">
             <Home />
           </section>
           <section id="about" className="min-h-screen rounded-3xl">
