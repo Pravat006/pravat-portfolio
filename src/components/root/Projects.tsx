@@ -50,7 +50,7 @@ export default function Projects() {
         <h1 className="text-center text-5xl font-bold mt-16 underline">PROJECTS</h1>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 mx-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 mx-12 lg:gap-24">
         {projects.map((project, index) => (
           <motion.div
             key={index}
@@ -65,7 +65,7 @@ export default function Projects() {
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="w-full h-44 lg:h-72 object-cover rounded-md"
+                  className="w-full h-44 lg:h-96 object-cover rounded-md"
                 />
                 <div className="backdrop-blur-[20px]  shadow-accent mt-2 rounded-2xl  px-5 py-2">
                   <h2 className="text-xl font-semibold mt-4">{project.name}</h2>

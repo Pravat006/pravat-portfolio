@@ -35,7 +35,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-[var(--text)] bg-transparent border outline-2 rounded-3xl">
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-[var(--text)] bg-transparent border outline-2 rounded-3xl shadow-2xl">
       {/* Heading with Scroll Animation */}
       <motion.h1
         className="text-5xl font-bold uppercase mb-10 tracking-widest"
