@@ -45,7 +45,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="min-h-screen  text-[var(--text)] backdrop-blur-lg border outline-2 rounded-3xl px-6 py-12">
+    <div className="min-h-screen  text-[var(--text)]  outline-none border border-none  rounded-3xl px-6 py-12">
       {/* Moving Heading */}
         <h1 className="text-center text-5xl font-bold mt-16 underline">PROJECTS</h1>
 

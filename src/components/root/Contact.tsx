@@ -35,10 +35,10 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-[var(--text)] bg-transparent border outline-2 rounded-3xl shadow-2xl">
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-[var(--text)]  border outline-2 rounded-3xl shadow-2xl ">
       {/* Heading with Scroll Animation */}
       <motion.h1
-        className="text-5xl font-bold uppercase mb-10 tracking-widest"
+        className="text-5xl font-bold uppercase mb-10 tracking-widest z-10"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -49,7 +49,7 @@ export default function Contact() {
 
       {/* Social Media Links */}
       <motion.div
-        className="flex space-x-6 text-3xl"
+        className="flex space-x-6 text-3xl z-10"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
@@ -71,44 +71,44 @@ export default function Contact() {
 
       {/* Contact Form with Scroll Animation */}
       <motion.div
-        className="mt-10 bg-[var(--text)] p-6 rounded-lg shadow-lg w-full max-w-lg"
+        className="mt-10  p-6 rounded-lg shadow-lg w-full max-w-lg z-10"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.3 }}
       >
-        <form className="space-y-4" onSubmit={handleSubmit}>
+        <form className="space-y-4 " onSubmit={handleSubmit}>
           <div>
-            <label className="block text-sm font-medium text-[var(--rev-bg)]">Name</label>
+            <label className="block sm:text-2xl font-medium text-[var(--rev-bg)]">Name</label>
             <input
               type="text"
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full mt-1 p-3 bg-[var(--rev-bg)] text-[var(--text)] rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full mt-1 p-3 backdrop-blur-md text-[var(--text)] sm:text-2xl rounded-md outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Your Name"
               required
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-[var(--rev-bg)]">Email</label>
+            <label className="block sm:text-2xl font-medium text-[var(--rev-bg)]">Email</label>
             <input
               type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full mt-1 p-3 bg-[var(--rev-bg)] text-[var(--text)]e rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full mt-1 p-3 backdrop-blur-md text-[var(--text)] rounded-md outline-none focus:ring-2 focus:ring-blue-500 sm:text-2xl"
               placeholder="Your Email"
               required
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-[var(--rev-bg)]">Message</label>
+            <label className="block sm:text-2xl font-medium text-[var(--rev-bg)]">Message</label>
             <textarea
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="w-full mt-1 p-3 bg-[var(--rev-bg)] text-[var(--text)] rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full mt-1 p-3 backdrop-blur-2xl sm:text-2xl text-[var(--text)] rounded-md outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Your Message"
               rows={4}
               required

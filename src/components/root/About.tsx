@@ -3,10 +3,10 @@ import IconTooltip from "./IconTooltip";
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-transparent backdrop-blur-3xl  text-[var(--text)] px-6 md:px-16 pt-28 pb-10 rounded-3xl overflow-hidden border-2 shadow-2xl">
+    <div className="min-h-screen max-w-4xl  text-[var(--text)] px-6 md:px-16 pt-28 pb-10 rounded-3xl overflow-hidden   z-10">
       {/* Title */}
       <motion.h1
-        className="text-4xl font-bold text-center mb-10"
+        className="text-4xl font-bold text-center mb-10 z-10"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -50 }} // Reverse transition
@@ -18,7 +18,7 @@ const About = () => {
 
       {/* Self Introduction */}
       <motion.div
-        className="max-w-3xl mx-auto mb-10 text-lg"
+        className="max-w-3xl mx-auto mb-10 text-lg z-10"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -50 }} // Reverse transition
@@ -35,21 +35,21 @@ const About = () => {
 
       {/* Education Section */}
       <motion.div
-        className="max-w-3xl mx-auto mb-10"
+        className="max-w-3xl mx-auto mb-10 z-10"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: 50 }} // Reverse transition
         transition={{ duration: 0.6 }}
         viewport={{ once: false, amount: 0.3 }}
       >
-        <h2 className="text-2xl font-semibold mb-4">Education</h2>
+        <h2 className="text-2xl font-semibold mb-4 z-10">Education</h2>
         <p className="font-bold lg:text-2xl">🎓 Studying <span className="font-bold text-yellow-500">B.Tech in Computer Science </span > Biju Patnaik University of Technology</p>
         <p className="lg:text-2xl">My studies have provided me with a strong foundation in software development and problem-solving. <br /> Which makes me more curious about Development </p>
       </motion.div>
 
       {/* Development Skills */}
       <motion.div
-        className="max-w-3xl mx-auto"
+        className="max-w-3xl mx-auto z-10"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 50 }} // Reverse transition
